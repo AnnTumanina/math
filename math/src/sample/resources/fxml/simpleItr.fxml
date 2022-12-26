@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane id="pane" alignment="center" hgap="10" prefHeight="235.0" prefWidth="392.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SimpleItrController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="235.0" prefWidth="409.0">
+         <children>
+            <TextField fx:id="firstNum" layoutX="19.0" layoutY="16.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField fx:id="secondNum" layoutX="104.0" layoutY="16.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField fx:id="thirdNum" layoutX="185.0" layoutY="16.0" prefHeight="31.0" prefWidth="49.0" promptText="не 0" />
+            <TextField fx:id="lastNum" layoutX="282.0" layoutY="16.0" prefHeight="25.0" prefWidth="39.0" />
+            <Label layoutX="83.0" layoutY="23.0" text="+" />
+            <Label layoutX="169.0" layoutY="23.0" text="+" />
+            <Label layoutX="262.0" layoutY="23.0" text="+" />
+            <Label layoutX="331.0" layoutY="23.0" text="= 0" />
+            <Label layoutX="63.0" layoutY="22.0" text="x" />
+            <Label layoutX="150.0" layoutY="22.0" text="x" />
+            <Label layoutX="242.0" layoutY="22.0" text="x" />
+            <Label layoutX="67.0" layoutY="14.0" text="^3" />
+            <Label layoutX="154.0" layoutY="14.0" text="^2" />
+            <TextField fx:id="upTXT" layoutX="141.0" layoutY="75.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField fx:id="downTXT" layoutX="141.0" layoutY="117.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField fx:id="accuracyTXT" layoutX="293.0" layoutY="75.0" prefHeight="25.0" prefWidth="39.0" promptText="0.1" />
+            <Button fx:id="result_itr" layoutX="261.0" layoutY="117.0" mnemonicParsing="false" onAction="#getResult" text="Решить" />
+            <Label layoutX="17.0" layoutY="160.0" text="Ответ:" />
+            <Label fx:id="res1" layoutX="91.0" layoutY="162.0" prefHeight="21.0" prefWidth="106.0" />
+            <Label fx:id="res2" layoutX="246.0" layoutY="162.0" prefHeight="21.0" prefWidth="106.0" />
+            <Label fx:id="res3" layoutX="91.0" layoutY="193.0" prefHeight="21.0" prefWidth="106.0" />
+            <Label fx:id="res4" layoutX="246.0" layoutY="193.0" prefHeight="21.0" prefWidth="106.0" />
+            <Label layoutX="14.0" layoutY="80.0" text="Верхняя граница:" />
+            <Label layoutX="14.0" layoutY="122.0" text="Нижняя граница:" />
+            <Label layoutX="14.0" layoutY="51.0" text="Границы изоляции корня" />
+            <Label layoutX="218.0" layoutY="80.0" text="Точность:" />
+
+
+
+         </children>
+      </Pane>
+   </children>
+</GridPane>
